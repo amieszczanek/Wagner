@@ -16,13 +16,13 @@
 </p>
 
 
-<%= link_to 'Edit', edit_destination_path(@destination) %> |
-<%= link_to 'Back', destinations_path %>
+<%= link_to 'Edytuj', edit_destination_path(@destination) %> |
+<%= link_to 'Powrót', destinations_path %>
 
 <% if @destination.seats.any? %>
-  <h3>Seat</h3>
+  <h3>Rezerwacja</h3>
    <%= render :partial => 'seats/seat', :collection => @destination.seats %>
 <% end %>
 
-<h3>Add new seat</h3>
+<h3>Dodaj nową rezerwację</h3>
 <%= render :partial => 'seats/form' %>
