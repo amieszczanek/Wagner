@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  destination: 
+  nazwisko: MyText
+  imie: MyString
+  telefon: 1
+
+two:
+  destination: 
+  nazwisko: MyText
+  imie: MyString
+  telefon: 1

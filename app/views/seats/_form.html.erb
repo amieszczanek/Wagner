@@ -1,0 +1,10 @@
+<%= simple_form_for [@destination, @destination.seats.build] do |f| %>
+  <div class="inputs">
+    <%= f.input :nazwisko, :input_html => {:rows => 4, :cols => 10} %>
+	<%= f.input :imie, :input_html => {:rows => 4, :cols => 10} %>
+	<%= f.input :telefon, :input_html => {:rows => 4, :cols => 10} %>
+  </div>
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

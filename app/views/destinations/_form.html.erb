@@ -1,0 +1,13 @@
+<%= simple_form_for(@destination) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :wyjazd_z, :input_html => {:size => 50}%>
+    <%= f.input :przyjazd_do, :input_html => {:size => 50} %>
+    <%= f.input :termin %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

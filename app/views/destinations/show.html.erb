@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Wyjazd z:</b>
+  <%= @destination.wyjazd_z %>
+</p>
+
+<p>
+  <b>Przyjazd do:</b>
+  <%= @destination.przyjazd_do %>
+</p>
+
+<p>
+  <b>Termin:</b>
+  <%= @destination.termin %>
+</p>
+
+
+<%= link_to 'Edit', edit_destination_path(@destination) %> |
+<%= link_to 'Back', destinations_path %>
+
+<% if @destination.seats.any? %>
+  <h3>Seat</h3>
+   <%= render :partial => 'seats/seat', :collection => @destination.seats %>
+<% end %>
+
+<h3>Add new seat</h3>
+<%= render :partial => 'seats/form' %>

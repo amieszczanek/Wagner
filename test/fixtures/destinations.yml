@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  wyjazd_z: MyString
+  przyjazd_do: MyText
+  termin: 2011-05-13 20:28:12
+
+two:
+  wyjazd_z: MyString
+  przyjazd_do: MyText
+  termin: 2011-05-13 20:28:12
