@@ -2,7 +2,7 @@ en:
   flash:
     actions:
       create:
-        notice: 'Utworzenie nowej podróży zakończyło się sukcesem.'
+        notice: 'Zapisz zakończyło się sukcesem.'
       update:
         notice: 'Aktualizacja zakończyła się sukcesem.'
       destroy:
