@@ -1,13 +1,12 @@
 
 a img {
-  border: 1px;
+  border-bottom: 1px groove #8470FF;
 }
 
 a {
   color: #0000FF;
 }
 #header {
-	font-family: "Mkreczne";
 	font-size: 30px;
    height: 3cm;
    width:73%;
@@ -24,8 +23,7 @@ a {
 	
 h1 {
 	color: #8B5F65;
-    text-decoration: underline;
-    font-family: "Mkreczne"	
+    font-family: "Franklin Gothic Book";	
 	}
 #footer {
     clear: both;
@@ -51,13 +49,15 @@ h1 {
 }
 
 #container {
-   background-color: yellow;
-   border: 1px;
-   border-style: groove;
-   border-color: #0000FF;
-   margin: 5px auto 0;
-   padding: 20px 20px;
-   width: 70%;
+  background-color: #DCDCDC;
+    box-shadow: 0 2px 6px #8470FF;
+    -moz-box-shadow: 0 2px 6px #8470FF;
+    -webkit-box-shadow: 0 2px 6px #8470FF;
+    width:70%;
+   	margin: 10px auto 0;
+    height: auto;
+    font-size: 22px;
+    padding-left: 30px;
 }
 
 #flash_notice, #flash_error, #flash_alert {
@@ -66,8 +66,9 @@ h1 {
 }
 
 #flash_notice {
-  background-color: #CFC;
-  border: solid 1px #6C6;
+    background-color: white;
+    border: 1px solid #8470FF;
+    width: 70%;
 }
 
 #flash_error, #flash_alert {

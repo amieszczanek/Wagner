@@ -1,7 +1,8 @@
 body {
-  background-color:#66CC66;
-  font-family: Verdana, Helvetica, Arial;
-  font-size: 18px;
+	background-color: #8B5F65;
+    margin: 4px 0 8px 0;
+    height: auto;
+    width: auto;
 }
 
 input[type="text"], textarea {
