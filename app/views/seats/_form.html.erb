@@ -1,6 +1,6 @@
 <%= simple_form_for [@destination, @destination.seats.build] do |f| %>
   <div class="inputs">
-    <%= f.input :nazwisko %>
+    <%= f.input :nazwisko, :input_html => {:rows => 1,:cols => 45} %>
 	<%= f.input :imie %>
 	<%= f.input :telefon %>
   </div>
