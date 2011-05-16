@@ -1,5 +1,14 @@
 <h1>Lista Podróży</h1>
 
+<div id="wyszukiwanie">
+	<% form_tag destinations_path, :method => 'get', :id => "destination_search" do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+	<% end %>
+	</div>
+
 <div id="Podroz">
 <%= render :partial => 'destination', :collection => @destinations %>
 </div>

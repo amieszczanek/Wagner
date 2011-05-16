@@ -4,6 +4,7 @@ Wagner::Application.routes.draw do
     resources :seats
   end
   
+  
   root :to=>"destinations#index"
 
   # The priority is based upon order of creation:
