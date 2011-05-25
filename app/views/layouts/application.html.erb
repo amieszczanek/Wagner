@@ -10,6 +10,15 @@
   <body>
 	<div id="header">
 	<h1>Podróże z Wagnerem</h1>
+		<nav id="authentication">
+  <% if current_user %>
+    Welcome <%= current_user.email %>!
+    <%= link_to "Log out", logout_path %>
+  <% else %>
+    <%= link_to "Register", register_path %> or
+    <%= link_to "Log in", login_path %>
+  <% end %>
+</nav>
 	</div>
 
     <div id="container">
