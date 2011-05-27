@@ -1,11 +1,22 @@
 Wagner::Application.routes.draw do
+  
+  get "register" => "users#new",    :as => "register"
+  get "login"    => "sessions#new", :as => "login"
+  get "logout"   => "sessions#destroy", :as => "logout"
+  get "sessions/new"
 
   resources :destinations do
     resources :seats
   end
+  resources :users
+  resources :sessions
+  
+  root :to => "destinations#index"
   
   
-  root :to=>"destinations#index"
+  
+  
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

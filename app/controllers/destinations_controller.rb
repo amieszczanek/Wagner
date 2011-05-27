@@ -2,7 +2,7 @@ class DestinationsController < ApplicationController
   # GET /destinations
   # GET /destinations.xml
   def index
-    @destinations = Destination.search(params[:search]).order(:wyjazd_z)
+    @destinations = Destination.search(params[:search]).order(:przyjazd_do).order(:wyjazd_z)
     
     respond_with(@destinations)
   end
