@@ -9,21 +9,22 @@
   </head>
   <body>
 	<div id="header">
-	<h1>Podróże z Wagnerem</h1>
-		<nav id="authentication">
-  <% if current_user %>
-    Welcome <%= current_user.email %>!
-    <%= link_to "Log out", logout_path %>
-  <% else %>
-    <%= link_to "Register", register_path %> or
-    <%= link_to "Log in", login_path %>
-  <% end %>
-</nav>
+		<h1>Rezerwacja Podróży</h1>
 	</div>
+
+	<nav id="authentication">
+	  <% if current_user %>
+	    Welcome <%= current_user.email %>!
+	    <%= link_to "Log out", logout_path %>
+	  <% else %>
+	    <%= link_to "Register", register_path %> or
+	    <%= link_to "Log in", login_path %>
+	  <% end %>
+	</nav>
 
     <div id="container">
       <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
