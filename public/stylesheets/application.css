@@ -1,17 +1,19 @@
 
+
 a img {
   border-bottom: 1px groove #8470FF;
 }
 
 a {
-  color: #0000FF;
+  color: #008000;
 }
+
 #header {
-	font-size: 30px;
-   height: 3cm;
-   width:73%;
-   margin: 10px auto 0;
-   text-align: center;
+	height: 2cm;
+    margin: 0 auto;
+    text-align: center;
+    width: 72%;
+	text-align: center;
 	background-color: #CDC1C5;
    box-shadow: 0 2px 6px #8470FF;
     -moz-box-shadow: 0 2px 6px #8470FF;
@@ -23,11 +25,13 @@ a {
 	
 h1 {
 	color: #8B5F65;
-    font-family: "Franklin Gothic Book";	
+    font-family: "Franklin Gothic Book";
+    font-size: 40px;
+    padding-top: 20px;	
 	}
 #footer {
     clear: both;
-    color: #A9A9A9;
+    color: #0033CC;
     display: block;
     margin-top: auto;
     text-align: center;
@@ -39,7 +43,7 @@ h1 {
     -moz-border-radius: 3% 3% 0% 0%;
     -webkit-border-radius: 3% 3% 0% 0%;
     height: 1cm;
-   width:73%;
+   width:72%;
    margin: 10px auto 0;
 }  
 .clear {
@@ -66,10 +70,17 @@ h1 {
 }
 
 #authentication {
-  width: 75%;
+  width:70%;
   margin: 0 auto;
-  padding: 20px 40px;
+  background-color: #DCDCDC;
   text-align: right;
+  padding-right: 30px;
+  box-shadow: 0 2px 6px #8470FF;
+    -moz-box-shadow: 0 2px 6px #8470FF;
+    -webkit-box-shadow: 0 2px 6px #8470FF;
+   border-radius: 3% 3% 0% 0%;
+    -moz-border-radius: 3% 3% 0% 0%;
+    -webkit-border-radius: 3% 3% 0% 0%;
 }
 
 
